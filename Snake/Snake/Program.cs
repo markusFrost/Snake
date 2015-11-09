@@ -10,7 +10,7 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! My Name is Andrey."); 
+            Console.WriteLine("Hello World!"); 
             Console.ReadLine();
         }
     }
