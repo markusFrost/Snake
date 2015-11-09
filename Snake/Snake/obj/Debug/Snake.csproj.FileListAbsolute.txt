@@ -1,1 +1,5 @@
 C:\Users\Андрей\Documents\GitHub\Snake\Snake\Snake\bin\Debug\Snake.exe.config
+C:\Users\Андрей\Documents\GitHub\Snake\Snake\Snake\bin\Debug\Snake.exe
+C:\Users\Андрей\Documents\GitHub\Snake\Snake\Snake\bin\Debug\Snake.pdb
+C:\Users\Андрей\Documents\GitHub\Snake\Snake\Snake\obj\Debug\Snake.exe
+C:\Users\Андрей\Documents\GitHub\Snake\Snake\Snake\obj\Debug\Snake.pdb
