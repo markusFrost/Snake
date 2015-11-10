@@ -19,24 +19,8 @@ namespace Snake
             //Инкапсуляция - свойство системы, позволяющее объединить данные и методы, работающие 
             //с ними в классе и скрыть все делати реализации от пользователя
 
-            List<int> numList = new List<int>();
-
-            numList.Add(0);
-            numList.Add(1);
-            numList.Add(4);
-
-            int x = numList[0];
-            int y = numList[1];
-            int z = numList[2];
-
-            numList.RemoveAt(2);
-
-            Console.WriteLine();
-            foreach (int i in numList)
-            {
-                Console.Write(i + "\t");
-            }
-
+            HorizontalList line = new HorizontalList( 5, 10, 8, '+' );
+            line.Draw();
 
             Console.ReadLine();
         }
