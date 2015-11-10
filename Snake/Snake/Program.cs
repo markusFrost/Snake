@@ -39,22 +39,21 @@ namespace Snake
             Point p = new Point(4, 5, '*');
             Snake snake = new Snake( p, 4, Direction.RIGHT );
             snake.Draw();
-            snake.Move();
 
-            Thread.Sleep(300);
-            snake.Move();
+            while (true)
+            {
+                if (Console.KeyAvailable) // была ли нажата какая - нибудь клавиша?
+                {
+                    ConsoleKeyInfo key = Console.ReadKey(); // получаем значение клавиши
 
-            Thread.Sleep(300);
-            snake.Move();
+                    snake.HandleKey(key);
+                }
+                Thread.Sleep(100);
+                snake.Move();
+            }
 
-            Thread.Sleep(300);
-            snake.Move();
 
-            Thread.Sleep(300);
-            snake.Move();
-
-            Thread.Sleep(300);
-            snake.Move();
+           
 
 
             Console.ReadLine();

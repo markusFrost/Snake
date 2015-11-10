@@ -8,7 +8,7 @@ namespace Snake
 {
     class Snake : Figure
     {
-        Direction direction;
+         Direction direction;
 
         public Snake( Point tail, int length, Direction direction )
         {
@@ -27,7 +27,7 @@ namespace Snake
             Point tail = pList.First();
             pList.Remove(tail); // Перерисовывать все не нужно. Нужно лишь удалить первый элемент
 
-            Point head = GetNextPoint();
+            Point head = GetNextPoint(); // решаем в какую стророну движется голова 
             pList.Add(head); // и добавить к голове новый
 
             tail.Clear();
@@ -43,6 +43,28 @@ namespace Snake
             Point nextPoint = new Point(head);
             nextPoint.Move(1, direction);
             return nextPoint;
+        }
+
+
+
+        public void HandleKey(ConsoleKeyInfo key)
+        {
+            if (key.Key == ConsoleKey.LeftArrow)
+            {
+                direction = Direction.LEFT;
+            }
+            else if (key.Key == ConsoleKey.RightArrow)
+            {
+                direction = Direction.RIGHT;
+            }
+            else if (key.Key == ConsoleKey.DownArrow)
+            {
+               direction = Direction.DOWN;
+            }
+            else if (key.Key == ConsoleKey.UpArrow)
+            {
+                direction = Direction.UP;
+            }
         }
     }
 }
